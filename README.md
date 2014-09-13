@@ -1,5 +1,5 @@
-Java Semester Project
-=====================
+True Caller Terminal Utility in JAVA
+====================================
 
 Description yet to be decided :) However I can put down a bare minimum writeup as of now. 
 
