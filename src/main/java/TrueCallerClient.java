@@ -11,6 +11,9 @@ public class TrueCallerClient {
 
     private static String sendGETRequest(String phoneNumber) throws Exception {
 
+        /* Change the shorthand of your country. Check True Caller Website for that.
+           This is specifically for India "/in" */
+
         String baseURL = "http://www.truecaller.com/in/";
         String finalURL = baseURL.concat(phoneNumber);
 
@@ -43,10 +46,10 @@ public class TrueCallerClient {
         return containerTag.text();
     }
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String args[]) throws Exception {
 
-        // Capturing the response fetched from GET request.
-        String htmlResponse = sendGETRequest("7597597930");
+        // Write your phone number in the argument of sendGETRequest.
+        String htmlResponse = sendGETRequest("");
 
         // Capturing the name of the caller
         String fetchCaller = parseResponse(htmlResponse);
